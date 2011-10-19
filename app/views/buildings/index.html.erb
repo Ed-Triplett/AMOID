@@ -1,0 +1,33 @@
+<h1>Listing buildings</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Topography</th>
+    <th>Note</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>References</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @buildings.each do |building| %>
+  <tr>
+    <td><%= building.name %></td>
+    <td><%= building.topography %></td>
+    <td><%= building.note %></td>
+    <td><%= building.latitude %></td>
+    <td><%= building.longitude %></td>
+    <td><%= building.references %></td>
+    <td><%= link_to 'Show', building %></td>
+    <td><%= link_to 'Edit', edit_building_path(building) %></td>
+    <td><%= link_to 'Destroy', building, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Building', new_building_path %>

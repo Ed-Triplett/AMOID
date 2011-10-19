@@ -1,4 +1,8 @@
 Amoid::Application.routes.draw do
+  resources :buildings
+
+  resources :sites
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
