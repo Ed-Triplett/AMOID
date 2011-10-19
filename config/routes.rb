@@ -1,4 +1,6 @@
 Amoid::Application.routes.draw do
+  resources :patrons
+
   resources :buildings
 
   resources :sites

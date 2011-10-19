@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Name: MyString
+  Type: MyString
+  Reign_begins: 1
+  Reign_ends: 1
+  Kingdom: 
+  Note: MyText
+
+two:
+  Name: MyString
+  Type: MyString
+  Reign_begins: 1
+  Reign_ends: 1
+  Kingdom: 
+  Note: MyText

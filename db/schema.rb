@@ -11,7 +11,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111019174943) do
+ActiveRecord::Schema.define(:version => 20111019185759) do
+
+  create_table "buildings", :force => true do |t|
+    t.string   "name"
+    t.string   "topography"
+    t.text     "note"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.integer  "site_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "patrons", :force => true do |t|
+    t.string   "Name"
+    t.string   "Type"
+    t.integer  "Reign_begins"
+    t.integer  "Reign_ends"
+    t.string   "Kingdom"
+    t.text     "Note"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "sites", :force => true do |t|
     t.string   "name"

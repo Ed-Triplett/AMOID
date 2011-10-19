@@ -1,0 +1,33 @@
+<h1>Listing patrons</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Reign begins</th>
+    <th>Reign ends</th>
+    <th>Kingdom</th>
+    <th>Note</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @patrons.each do |patron| %>
+  <tr>
+    <td><%= patron.Name %></td>
+    <td><%= patron.Type %></td>
+    <td><%= patron.Reign_begins %></td>
+    <td><%= patron.Reign_ends %></td>
+    <td><%= patron.Kingdom %></td>
+    <td><%= patron.Note %></td>
+    <td><%= link_to 'Show', patron %></td>
+    <td><%= link_to 'Edit', edit_patron_path(patron) %></td>
+    <td><%= link_to 'Destroy', patron, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Patron', new_patron_path %>

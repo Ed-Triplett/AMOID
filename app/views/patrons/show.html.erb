@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @patron.Name %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @patron.Type %>
+</p>
+
+<p>
+  <b>Reign begins:</b>
+  <%= @patron.Reign_begins %>
+</p>
+
+<p>
+  <b>Reign ends:</b>
+  <%= @patron.Reign_ends %>
+</p>
+
+<p>
+  <b>Kingdom:</b>
+  <%= @patron.Kingdom %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @patron.Note %>
+</p>
+
+
+<%= link_to 'Edit', edit_patron_path(@patron) %> |
+<%= link_to 'Back', patrons_path %>

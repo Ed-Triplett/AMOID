@@ -6,7 +6,7 @@ class CreateBuildings < ActiveRecord::Migration
       t.text :note
       t.float :latitude
       t.float :longitude
-      t.site :references
+      t.references :site
 
       t.timestamps
     end
