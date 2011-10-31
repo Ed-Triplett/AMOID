@@ -1,6 +1,6 @@
-class CreatePatrons < ActiveRecord::Migration
+class CreatePatron < ActiveRecord::Migration
   def change
-    create_table :patrons do |t|
+    create_table :patron do |t|
       t.string :Name
       t.string :Type
       t.integer :Reign_begins

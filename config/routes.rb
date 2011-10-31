@@ -1,9 +1,16 @@
 Amoid::Application.routes.draw do
+  resources :orders
+
+  resources :events
+
   resources :patrons
 
   resources :buildings
 
   resources :sites
+
+  root :to => 'aggregate#new'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

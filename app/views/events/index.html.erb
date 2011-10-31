@@ -1,0 +1,37 @@
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>Order</th>
+    <th>Begin</th>
+    <th>Begin span</th>
+    <th>End</th>
+    <th>End span</th>
+    <th>Building type</th>
+    <th>Event type</th>
+    <th>Note</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.order %></td>
+    <td><%= event.begin %></td>
+    <td><%= event.begin_span %></td>
+    <td><%= event.end %></td>
+    <td><%= event.end_span %></td>
+    <td><%= event.building_type %></td>
+    <td><%= event.event_type %></td>
+    <td><%= event.note %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Event', new_event_path %>

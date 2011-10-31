@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  order: MyString
+  begin: 1
+  begin_span: 1
+  end: 1
+  end_span: 1
+  building_type: MyString
+  event_type: MyString
+  note: MyText
+
+two:
+  order: MyString
+  begin: 1
+  begin_span: 1
+  end: 1
+  end_span: 1
+  building_type: MyString
+  event_type: MyString
+  note: MyText
