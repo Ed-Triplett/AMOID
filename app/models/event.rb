@@ -5,4 +5,5 @@ class Event < ActiveRecord::Base
   validates :order, :presence => true
   validates :event_type, :presence => true
   validates :building_type, :presence => true
+  accepts_nested_attributes_for :patron, :order
 end
